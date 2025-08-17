@@ -5,7 +5,7 @@ from aiohttp import web
 from telegram import Update
 from telegram.ext import Application, CommandHandler
 
-# Variáveis de ambiente (Render Environment Variables)
+# Variáveis do ambiente
 TOKEN = os.environ.get("BOT_TOKEN")
 LINK_GRUPO = os.environ.get("GROUP_LINK")
 EXPFY_PUBLIC_KEY = os.environ.get("EXPFY_PUBLIC_KEY")
@@ -113,3 +113,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+    
